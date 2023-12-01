@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="top">
+      <!-- Input fields for day, month, and year -->
+      <div class="input-container" id="error-messages-day">
+        <label for="twoDigitInputD">DAY</label>
+        <input type="number" placeholder="DD" id="twoDigitInputD" maxlength="2">
+        <p id="dayErrorMessage" class="error-message"></p>
+      </div>
+      <div class="input-container" id="error-messages-month">
+        <label for="twoDigitInputM">MONTH</label>
+        <input type="number" placeholder="MM" id="twoDigitInputM" maxlength="2">
+        <p id="monthErrorMessage" class="error-message"></p>
+      </div>
+      <div class="input-container" id="error-messages-year">
+        <label for="fourDigitInput">YEAR</label>
+        <input type="number" placeholder="YYYY" id="fourDigitInput" maxlength="4">
+        <p id="yearErrorMessage" class="error-message"></p>
+      </div>
+    </section>
+    </section>
+    <div class="div-line">
+      <!-- Image acting as a button -->
+      <div class="icon-con">
+        <img src="./assets/images/icon-arrow.svg" alt="" id="inputButton">
+      </div>
+    </div>
+    <section class="botton">
+      <!-- Result sections -->
+      <h2><span id="years">--</span> years</h2>
+      <h2><span id="months">--</span> months</h2>
+      <h2><span id="days">--</span> days</h2>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
